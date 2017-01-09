@@ -3,7 +3,7 @@ var models = require("../../../../models/");
 var getRandomText = require("../../../../controllers/getRandomText.js");
 
 var router = express.Router();
-
+//post
 router.post("/", function (req, res) {
     var url = req.body.url;
 
@@ -25,7 +25,7 @@ router.post("/", function (req, res) {
         });
     });
 });
-
+//get
 router.get("/", function (req, res) {
     models.shortUrl.findAll().then(function (shortUrls) {
         res.json({
