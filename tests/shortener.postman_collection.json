@@ -1,0 +1,129 @@
+{
+	"id": "0940babb-63e0-7f44-0594-69802f09c4be",
+	"name": "shortener",
+	"description": "",
+	"order": [
+		"caac8b52-f69e-33ac-7595-141ff2b18ec6",
+		"1776f1cf-a5c5-e946-081d-333e5b14e383",
+		"64073bc1-53f0-3141-ac7e-e4343674a1d4",
+		"c99e1040-bfde-ada8-ee26-5a7aa92b2a76",
+		"ffbb2849-b334-d7bb-b455-144969d09f87"
+	],
+	"folders": [],
+	"timestamp": 1483907045499,
+	"owner": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "1776f1cf-a5c5-e946-081d-333e5b14e383",
+			"headers": "",
+			"url": "http://192.168.92.130:3000/api/v1/urls/",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "0940babb-63e0-7f44-0594-69802f09c4be",
+			"data": null,
+			"dataMode": "params",
+			"name": "show all urls",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1483907249072,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "64073bc1-53f0-3141-ac7e-e4343674a1d4",
+			"headers": "",
+			"url": "http://192.168.92.130:3000/api/v1/urls/YUmLSMwEH",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1483908737289,
+			"name": "show one url of given id",
+			"description": "",
+			"collectionId": "0940babb-63e0-7f44-0594-69802f09c4be",
+			"responses": []
+		},
+		{
+			"id": "c99e1040-bfde-ada8-ee26-5a7aa92b2a76",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://192.168.92.130:3000/api/v1/urls/5aH6w3efk",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "url",
+					"value": "https://www.youtube.com/",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1483908128145,
+			"name": "change destination url of short url",
+			"description": "",
+			"collectionId": "0940babb-63e0-7f44-0594-69802f09c4be",
+			"responses": []
+		},
+		{
+			"id": "caac8b52-f69e-33ac-7595-141ff2b18ec6",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://192.168.92.130:3000/api/v1/urls/",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "0940babb-63e0-7f44-0594-69802f09c4be",
+			"data": [
+				{
+					"key": "url",
+					"value": "https://google.com/",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "make new short url",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1483907045498,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "ffbb2849-b334-d7bb-b455-144969d09f87",
+			"headers": "",
+			"url": "http://192.168.92.130:3000/api/v1/urls/5aH6w3efk",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "0940babb-63e0-7f44-0594-69802f09c4be",
+			"data": null,
+			"dataMode": "params",
+			"name": "delete shortUrl by id",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1483908263655,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
