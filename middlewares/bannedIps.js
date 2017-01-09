@@ -4,9 +4,9 @@ module.exports = function(req, res, next) {
     var ip = req.ip;
 
     if(bannedIps.includes(ip)) {
-        res.send("You are banned.");
+        res.send("You are banned."); // send "you are banned"
         return;
     }
 
-    next();
+    next(); // 
 };
